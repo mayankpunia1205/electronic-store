@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Category</title>
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        * {
+            overflow-x: hidden;
+        }
+
+        .footer {
+            background: gray;
+            width: 100%;
+            height: 400px;
+            margin-top: 100px;
+        }
+
+        .footer .box-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+            gap: 1rem;
+        }
+
+        .footer .box-container .box h3 {
+            font-size: 2.5rem;
+            color: var(--black);
+            padding: 1rem 0;
+        }
+
+        .footer .box-container .box h3 i {
+            color: var(--orange);
+        }
+
+        .footer .box-container .box .link {
+            display: block;
+            padding: 1rem 0;
+            font-size: 1.5rem;
+            color: var(--light-color);
+        }
+
+        .footer .box-container .box .link i {
+            color: var(--orange);
+            padding-right: .5rem;
+        }
+
+        .footer .box-container .box .link:hover i {
+            padding-right: 1rem;
+        }
+
+        .footer .box-container .box p {
+            font-size: 1.5rem;
+            color: var(--light-color);
+            line-height: 1.8;
+            padding: 1rem 0;
+        }
+
+        .footer .box-container .box .share a {
+            width: 4rem;
+            height: 4rem;
+            line-height: 4rem;
+            border-radius: .5rem;
+            font-size: 2rem;
+            color: var(--black);
+            margin-left: .2rem;
+            background: #eee;
+            text-align: center;
+        }
+
+        .footer .box-container .box .share a:hover {
+            background: var(--orange);
+            color: #fff;
+        }
+
+        .footer .box-container .box .email {
+            width: 100%;
+            margin: .7rem 0;
+            padding: 1rem;
+            background: #eee;
+            border-radius: 0.5rem;
+            font-size: 1.6rem;
+            color: var(--black);
+            text-transform: none;
+        }
+
+        .footer .box-container .box .payment-img {
+            height: 3rem;
+            margin-top: 2rem;
+        }
+
+        .footer .credit {
+            text-align: center;
+            margin-top: 3rem;
+            font-size: 2rem;
+            padding: 1rem;
+            padding-top: 2.5rem;
+            color: var(--black);
+            border-top: var(--border);
+        }
+
+        .footer .credit span {
+            color: var(--orange);
+        }
+
+        table tr td img {
+            height: 200px;
+            width: 200px;
+            border-radius: 100%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+    </nav>
+
+    <h1 style="font-size: 4rem; margin-left:0px; margin-top: 100px;">TOP-SELLING PC's</h1>
+    <div style="margin-top: 100px; margin-left: 100px;">
+        <div class="product-container">
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount">5% off</span>
+                    <a href="applepc.html"> <img
+                            src="https://rukminim1.flixcart.com/image/612/612/kp1imq80/allinone-desktop/a/g/z/mgph3hn-a-apple-original-imag3d5ttap34g3m.jpeg?q=70"
+                            class="product-thumbnail"></a>
+                    <button class="card-btn">add to wishlist</button>
+
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">APPLE</h2>
+                    <p class="product-desc"> APPLE 2021 iMac with 4.5K Retina display M1</p>
+                    <span class="price">Rs.1,45,990</span><span class="actual-price">Rs.1,50,000</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount">6% off</span>
+                    <img src="https://rukminim1.flixcart.com/image/612/612/ktizdzk0/allinone-desktop/k/o/p/24ada6-lenovo-original-imag6umfux69jvfh.jpeg?q=70"
+                        class="product-thumbnail">
+                    <button class="card-btn">add to wishlist</button>
+
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Lenovo</h2>
+                    <p class="product-desc"> Lenovo IdeaCentre Ryzen 5 (8 GB DDR4/512 GB SSD/Windows 10 Home/23.8 Inch
+                        Screen/24ADA6-MS Office Home and Student 2019)</p>
+                    <span class="price">Rs.52,280</span><span class="actual-price">Rs.59,999</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount">4% off</span>
+                    <img src="https://rukminim1.flixcart.com/image/612/612/kp1imq80/allinone-desktop/c/e/j/mgpl3hn-a-apple-original-imag3d5vdx7ha995.jpeg?q=70"
+                        width="450" height="800" class="product-thumbnail">
+                    <button class="card-btn">add to wishlist</button>
+
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">APPLE</h2>
+                    <p class="product-desc"> APPLE 2021 iMac with 4.5K Retina display M1</p>
+                    <span class="price">Rs.1,32,000</span><span class="actual-price">Rs.1,39,900</span>
+                </div>
+
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount">21% off</span>
+                    <img src="https://rukminim1.flixcart.com/image/612/612/l2qhjm80/allinone-desktop/i/j/f/enti5-650-8gb-1tb-120-22led-entwino-original-imageyjg2gezegph.jpeg?q=70"
+                        class="product-thumbnail">
+                    <button class="card-btn">add to wishlist</button>
+
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Lenovo</h2>
+                    <p class="product-desc">Lenovo ideacentre A340-24IWL Core</p>
+                    <span class="price">Rs.61,490</span><span class="actual-price">Rs.78,690</span>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div style="margin-top: 100px; margin-left: 100px;">
+        <div class="product-container">
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount">20% off</span>
+                    <img src="https://rukminim1.flixcart.com/image/612/612/kklhbbk0/desktop-computer/p/y/p/afm-core2duo-after-market-original-imafzww4pb75gahb.jpeg?q=70"
+                        class="product-thumbnail">
+                    <button class="card-btn">add to wishlist</button>
+
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">ASUS</h2>
+                    <p class="product-desc"> product short description</p>
+                    <span class="price">Rs.85,000</span><span class="actual-price">Rs.1,05,000</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount">5% off</span>
+                    <img src="https://rukminim1.flixcart.com/image/612/612/kwqq1zk0/desktop-computer/h/m/z/0-i3-550-8gb-500gb-18-5-dzab-original-imag9cg5tbutpagt.jpeg?q=70"
+                        class="product-thumbnail">
+                    <button class="card-btn">add to wishlist</button>
+
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">HP</h2>
+                    <p class="product-desc"> product short description</p>
+                    <span class="price">Rs.64,999</span><span class="actual-price">Rs.66,999</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount">17% off</span>
+                    <img src="https://rukminim1.flixcart.com/image/612/612/kmwcuq80/allinone-desktop/a/u/r/24-df0060in-hp-original-imagfp8zhg9csqk2.jpeg?q=70"
+                        width="450" height="800" class="product-thumbnail">
+                    <button class="card-btn">add to wishlist</button>
+
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">HP</h2>
+                    <p class="product-desc"> HP AIO Ryzen 3 Dual Core (8 GB DDR4</p>
+                    <span class="price">Rs.42,990</span><span class="actual-price">Rs.52,426</span>
+                </div>
+
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount">10% off</span>
+                    <img src="https://rukminim1.flixcart.com/image/612/612/l1mh7rk0/allinone-desktop/d/g/2/gt-gamer-desktop-2gb-nv-gtx-750-ti-graphics-card-zoonis-original-imagd539rfzzzbsg.jpeg?q=70"
+                        class="product-thumbnail">
+                    <button class="card-btn">add to wishlist</button>
+
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">ZOONIS</h2>
+                    <p class="product-desc"> ZOONIS Gaming Core i5</p>
+                    <span class="price">Rs.44,500</span><span class="actual-price">Rs.49,450</span>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div style="margin-top: 100px;">
+
+        <img src="./Images/c17.png" style="margin: 100px 30px ;">
+    </div>
+    <h1 style="font-size: 5rem; margin-left: 70px;">Shop By Brands</h1>
+    <div style="margin-top: 100px;">
+        <table>
+            <tr>
+                <td><img src="./Images/brand1.png" style="margin-left: 200px; "></td>
+                <td><img src="./Images/brand2.png" style="margin-left: 100px;"></td>
+                <td><img src="./Images/brand3.png" style="margin-left: 100px;"></td>
+
+                <td><img src="./Images/brand4.png" style="margin-left: 100px;"></td>
+            </tr>
+            <tr>
+                <td><img src="./Images/brand5.png" style="margin-left: 200px; margin-top:50px ;"></td>
+                <td><img src="./Images/brand6.png" style="margin-left: 100px; margin-top:50px ;"></td>
+                <td><img src="./Images/brand7.png" style="margin-left: 100px; margin-top:50px ;"></td>
+
+                <td><img src="./Images/brand8.png" style="margin-left: 100px; margin-top:50px ;"></td>
+            </tr>
+        </table>
+
+    </div>
+
+    <div style="display: inline-block; margin-top: 100px;">
+        <div style="float: left; height: 500px; margin-left: 20px;"><img src="./Images/cc1.png"></div>
+        <div style="float: left; margin-top: -2px;"><img src="./Images/cc2.png" height: 250px;><br><img
+                src="./Images/cc3.png" height: 250px; style="margin-top: -3px;"></div>
+        <div style="float: left; height: 500px;"><img src="./Images/cc4.png"></div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <section class="footer" id="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3> Electronic Store </h3>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, ab. </p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3> Contact Info </h3>
+                <a href="#" class="link"> <i class="fas fa-phone"></i> +123-456-7890 </a>
+                <a href="#" class="link"> <i class="fas fa-phone"></i> +111-222-3333 </a>
+                <a href="#" class="link"> <i class="fas fa-envelope"></i>electronic.mart@gmail.com </a>
+                <a href="#" class="link"> <i class="fas fa-map-marker-alt"></i> Industrial Area, Chandigarh </a>
+            </div>
+
+
+
+
+        </div>
+
+
+    </section>
+
+
+    <script src="js/nav.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Electronics store</title>
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- <link rel="stylesheet" href="./css/nav.css"> -->
+    <style>
+    * {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.hero{
+    width: 100%;
+}
+.row{
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.col{
+    flex-basis: 45%;
+}
+.slider{
+    height: 80vh;
+    display: flex;
+}
+.product img{
+    height: 19vh;
+    margin-bottom: 9px;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.product img:hover{
+    opacity: 1;
+}
+
+
+.preview img{
+    height: 100%;
+}
+p{
+    margin-bottom: 20px;
+}
+.brand{
+    background: #008000;
+    width: fit-content;
+    color: #fff;
+    font-size: 12px;
+    padding: 2px 5px;
+}
+h2{
+    font-size: 45px;
+    color: #555;
+    margin-bottom: 20px;
+}
+.rating{
+    display: flex;
+    height: 15px;
+}
+.rating .fa{
+    color: #008000;
+}
+.price{
+    color: #fe980f;
+    font-size: 26px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+input{
+    width: 30px;
+    border: 1px solid #ccc;
+    font-weight: bold;
+    text-align: center;
+}
+button{
+    color: #fff;
+    font-size: 15px;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    background: #fe980f;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+button .fa{
+    margin-right: 10px;
+}
+.related{
+    width: 90%;
+    margin: 0 auto 40px;
+}
+.related .row{
+    width: 100%;
+    height: auto;
+}
+.columns{
+    flex-basis: 22%;
+    height: 100%;
+}
+.items img{
+    width: 100%;
+}
+.details{
+    margin-top: 20px;
+}
+.details p{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.details .rating{
+    margin: 10px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+    .footer{
+        background:gray;
+        width:100%;
+        height: 300px;
+    }
+    
+    .footer .box-container{
+        display: grid;
+       grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+        gap: 1rem;
+    }
+    
+    .footer .box-container .box h3{
+        font-size: 2.5rem;
+        color: var(--black);
+        padding: 1rem 0;
+    }
+    
+    .footer .box-container .box h3 i{
+        color: var(--orange);
+    }
+    
+    .footer .box-container .box .link{
+        display: block;
+        padding: 1rem 0;
+        font-size: 1.5rem;
+        color: var(--light-color);
+    }
+    
+    .footer .box-container .box .link i{
+        color: var(--orange);
+        padding-right: .5rem;
+    }
+    
+    .footer .box-container .box .link:hover i{
+        padding-right: 1rem;
+    }
+    
+    .footer .box-container .box p{   
+        font-size: 1.5rem;
+        color: var(--light-color);
+        line-height: 1.8;
+        padding: 1rem 0;
+    }
+    
+    .footer .box-container .box .share a{
+        width: 4rem;
+        height: 4rem;
+        line-height: 4rem;
+        border-radius: .5rem;
+        font-size: 2rem;
+        color: var(--black);
+        margin-left: .2rem;
+        background: #eee;
+        text-align: center;
+    }
+    
+    .footer .box-container .box .share a:hover{
+        background: var(--orange);
+        color: #fff;
+    }
+    
+    .footer .box-container .box .email{
+        width: 100%;
+        margin: .7rem 0;
+        padding: 1rem;
+        background: #eee;
+        border-radius: 0.5rem;
+        font-size: 1.6rem;
+        color: var(--black);
+        text-transform: none;
+    }
+    
+    .footer .box-container .box .payment-img{
+        height: 3rem;
+        margin-top: 2rem;
+    }
+    
+    .footer .credit{
+        text-align: center;
+        margin-top: 3rem;
+        font-size: 2rem;
+        padding: 1rem;
+        padding-top: 2.5rem;
+        color: var(--black);
+        border-top: var(--border);
+    }
+    
+    .footer .credit span{
+        color: var(--orange);
+    }
+
+    .specs{
+        width: 90%;
+    }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar">
+    </nav>
+    <div class="hero">
+        <div class="row">
+            <div class="col">
+
+                <div class="slider">
+                    <div class="product">
+                        
+                        <!-- photo change effect by js -->
+
+                        <img src="./Images/s21.jpg " alt="" onclick="clickme(this)">
+                        <img src="./Images/s211.jpg" alt="" onclick="clickme(this)">
+                        <img src="./Images/s212.jpg" alt="" onclick="clickme(this)">
+                        <img src="./Images/s213.jpg" alt="" onclick="clickme(this)">
+
+                    </div>
+                    <div class="preview">
+                        <img src="./Images/s21.jpg" id="imagebox" alt="">
+                    </div>
+                </div>
+
+            </div>
+            <div class="col">
+
+                <div class="content">
+                    <p class="brand">Brand: Samsung</p>
+                    <h2>Samsung S21 Ultra 5G</h2>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p class="price">Price: RS.85,000</p>
+                    <p>Variant: <select name="model">
+
+                            <option value="select Model"></option>
+                            <option value="128-12 gb">12-128</option>
+                            <option value="256-12">12-256</option>
+                            <option value="256-16">16-512</option>
+
+                        </select></p>
+                    <p>Quantity: <input type="text" value="1"></p>
+                    <button type="button" onclick="fun1()">
+                        <i class="fa fa-shopping-cart"></i>
+                        Add to cart</button>
+                        <br>
+                        <br>
+                        <p style="display:none;font-weight:bold;" id="getp">Succesfully Added to Cart</p>
+                </div>
+
+            </div>
+        </div>
+        <img src="./Images/specs.png" alt="specification" class="specs">
+
+
+        <div class="related">
+            <h2>related items</h2>
+            <div class="row">
+                <div class="columns">
+                    <div class="items">
+                        <img src="./Images/ipho.jpg" alt="">
+                        <div class="details">
+                            <p>Iphone 13pro max</p>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                            </div>
+
+                            <p>Rs.130000</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="items">
+                        <img src="./Images/iphone13.png" alt="">
+                        <div class="details">
+                            <p>Iphone 13</p>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+
+                            <p>Rs.1,24,000</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="items">
+                        <img src="./Images/oneplus.jpg" alt="">
+                        <div class="details">
+                            <p>oneplus 10 pro</p>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+
+                            <p>Rs.64,999</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="items">
+                        <img src="./Images/googlep.jpg" alt="">
+                        <div class="details">
+                            <p>Google pixle 6 pro</p>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+
+                            <p>Rs.44,500</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+    <script>
+        function clickme(smallImg) {
+            
+            var fullImg = document.getElementById("imagebox");
+            fullImg.src = smallImg.src;
+
+        }
+        function fun1(){
+            document.getElementById("getp").style.display = "block";
+        }
+
+    </script>
+
+
+   
+            
+            <section class="footer" id="footer">
+                <div class="box-container">
+                    <div class="box">
+                        <h3> Electronic Store </h3>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, ab. </p>
+                        <div class="share">
+                            <a href="#" class="fab fa-facebook-f"></a>
+                            <a href="#"  class="fab fa-twitter"></a>
+                            <a href="#"  class="fab fa-instagram"></a>
+                            <a href="#"  class="fab fa-linkedin"></a>
+                        </div>
+                    </div>
+        
+                    <div class="box">
+                        <h3> Contact Info </h3>
+                        <a href="#" class="link"> <i class="fas fa-phone"></i> +123-456-7890 </a>
+                        <a href="#" class="link"> <i class="fas fa-phone"></i> +111-222-3333 </a>
+                        <a href="#" class="link"> <i class="fas fa-envelope"></i>electronic.mart@gmail.com </a>
+                        <a href="#" class="link"> <i class="fas fa-map-marker-alt"></i> Industrial Area, Chandigarh </a>
+                    </div>
+        
+                   
+        
+                    
+                </div>
+        
+               
+            </section>
+    <script src="js/nav.js">
+       
+    </script>
+
+</body>
+
+</html>

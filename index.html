@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Electronics store</title>
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- <link rel="stylesheet" href="./css/nav.css"> -->
+    <style>.footer{
+        background:gray;
+        width:100%;
+        height: 300px;
+    }
+    
+    .footer .box-container{
+        display: grid;
+       grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+        gap: 1rem;
+    }
+    
+    .footer .box-container .box h3{
+        font-size: 2.5rem;
+        color: var(--black);
+        padding: 1rem 0;
+    }
+    
+    .footer .box-container .box h3 i{
+        color: var(--orange);
+    }
+    
+    .footer .box-container .box .link{
+        display: block;
+        padding: 1rem 0;
+        font-size: 1.5rem;
+        color: var(--light-color);
+    }
+    
+    .footer .box-container .box .link i{
+        color: var(--orange);
+        padding-right: .5rem;
+    }
+    
+    .footer .box-container .box .link:hover i{
+        padding-right: 1rem;
+    }
+    
+    .footer .box-container .box p{   
+        font-size: 1.5rem;
+        color: var(--light-color);
+        line-height: 1.8;
+        padding: 1rem 0;
+    }
+    
+    .footer .box-container .box .share a{
+        width: 4rem;
+        height: 4rem;
+        line-height: 4rem;
+        border-radius: .5rem;
+        font-size: 2rem;
+        color: var(--black);
+        margin-left: .2rem;
+        background: #eee;
+        text-align: center;
+    }
+    
+    .footer .box-container .box .share a:hover{
+        background: var(--orange);
+        color: #fff;
+    }
+    
+    .footer .box-container .box .email{
+        width: 100%;
+        margin: .7rem 0;
+        padding: 1rem;
+        background: #eee;
+        border-radius: 0.5rem;
+        font-size: 1.6rem;
+        color: var(--black);
+        text-transform: none;
+    }
+    
+    .footer .box-container .box .payment-img{
+        height: 3rem;
+        margin-top: 2rem;
+    }
+    
+    .footer .credit{
+        text-align: center;
+        margin-top: 3rem;
+        font-size: 2rem;
+        padding: 1rem;
+        padding-top: 2.5rem;
+        color: var(--black);
+        border-top: var(--border);
+    }
+    
+    .footer .credit span{
+        color: var(--orange);
+    }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar">
+    </nav>
+    <header class="home-img">
+        <div class="content">
+            <img src="./bannerfrpnt.png" style="width: 100%; height:300px;" alt="" class="logo">
+            <p class="sub-heading">Best Online Electronic Items</p>
+        </div>
+
+    </header>
+
+           
+    <section class="product">
+        <h2 class="product-category">best selling products</h2>
+        <div class="product-container">
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount">20% off</span>
+                    <a href="s21.html"><img src="./s21.jpg" class="product-thumbnail"></a>
+                    <button class="card-btn">add to wishlist</button>
+
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">brand</h2>
+                    <p class="product-desc"> product short description</p>
+                    <span class="price">Rs.85,000</span><span class="actual-price">Rs.1,05,000</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount">5% off</span>
+                    <img src="./oneplus.jpg" class="product-thumbnail">
+                    <button class="card-btn">add to wishlist</button>
+
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">brand</h2>
+                    <p class="product-desc"> product short description</p>
+                    <span class="price">Rs.64,999</span><span class="actual-price">Rs.66,999</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount">10% off</span>
+                    <img src="./ipho.jpg" width="450" height="800" class="product-thumbnail">
+                    <button class="card-btn">add to wishlist</button>
+
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">brand</h2>
+                    <p class="product-desc"> product short description</p>
+                    <span class="price">Rs.1,24,000</span><span class="actual-price">Rs.1,32,900</span>
+                </div>
+                 
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount">10% off</span>
+                    <img src="./googlep.jpg" class="product-thumbnail">
+                    <button class="card-btn">add to wishlist</button>
+
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">brand</h2>
+                    <p class="product-desc"> product short description</p>
+                    <span class="price">Rs.44,500</span><span class="actual-price">Rs.49,450</span>
+                </div>
+            </div>
+            </div>
+            </section>
+            <br>
+            <br>
+            <br>
+            <div style="display:inline;">
+                <table>
+                    <tr>
+                        <td>
+                            <img src="./phones.jpg" style="margin:20px 0 30px 80px ; height:500px; width:700px;">
+                        </td>
+                         <td>
+                            <img src="./laptop.jpg" style="margin:10px 20px 20px 5px; height:500px; width:700px;">
+                         </td>
+                    </tr>
+                </table>
+                
+                
+            </div>
+            
+            <section class="footer" id="footer">
+                <div class="box-container">
+                    <div class="box">
+                        <h3> Electronic Store </h3>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, ab. </p>
+                        <div class="share">
+                            <a href="#" class="fab fa-facebook-f"></a>
+                            <a href="#"  class="fab fa-twitter"></a>
+                            <a href="#"  class="fab fa-instagram"></a>
+                            <a href="#"  class="fab fa-linkedin"></a>
+                        </div>
+                    </div>
+        
+                    <div class="box">
+                        <h3> Contact Info </h3>
+                        <a href="#" class="link"> <i class="fas fa-phone"></i> +123-456-7890 </a>
+                        <a href="#" class="link"> <i class="fas fa-phone"></i> +111-222-3333 </a>
+                        <a href="#" class="link"> <i class="fas fa-envelope"></i>electronic.mart@gmail.com </a>
+                        <a href="#" class="link"> <i class="fas fa-map-marker-alt"></i> Industrial Area, Chandigarh </a>
+                    </div>
+        
+                   
+        
+                    
+                </div>
+        
+               
+            </section>
+    <script src="js/nav.js"></script>
+
+</body>
+
+</html>
